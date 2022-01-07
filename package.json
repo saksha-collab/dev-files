@@ -16,7 +16,9 @@
     "react-scripts": "4.0.3"
   },
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
+    "start:dev": "nodemon app.js",
+    "start:prod": "node app.js",
     "postinstall": "npm run build",
     "dev": "react-scripts start",
     "build": "react-scripts build",
