@@ -1,4 +1,5 @@
 {
     "prettier.configPath": ".prettierrc",
-    "prettier.singleQuote": true
+    "prettier.singleQuote": true,
+    "jshint.enable": false
 }
