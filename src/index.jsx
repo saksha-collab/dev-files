@@ -10,6 +10,7 @@ import AddButton from './components/AddButton';
 import Team from './components/Team';
 import Displayuser from './components/Displayuser';
 import Usersate from './components/Usersate';
+import AddCred from './AddCred';
 
 function App() {
     return (
