@@ -1,18 +1,23 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
+
 function Useritem(props) {
     const ele = props.ele;
-    console.log(ele);
-    let imgurl;
+    const [img, setImg] = useState('');
+
+    useEffect(async () => {
+        const data = await gettingmore(ele.githubid);
+        console.log(data.avatar_url);
+        setImg(data.avatar_url);
+    }, [img]);
+
     const gettingmore = async (x) => {
         console.log(x);
         let data = await fetch(`https://api.github.com/users/${x}`);
         data = await data.json();
-        data = JSON.stringify(data);
         return data;
     };
-    let data = gettingmore(ele.githubid);
-    imgurl = data.avatar_url;
-    console.log(imgurl);
+
     return (
         <div
             className="card"
@@ -22,8 +27,8 @@ function Useritem(props) {
         >
             <img
                 src={
-                    imgurl
-                        ? imgurl
+                    img
+                        ? img
                         : 'https://img.search.brave.com/6xgDU7tJsUF77N9rdOO2WKXBWsmVeTJ864s4ijukG3Q/fit/860/789/ce/1/aHR0cHM6Ly93d3cu/a2luZHBuZy5jb20v/cGljYy9tLzQ5NS00/OTUyNTM1X2NyZWF0/ZS1kaWdpdGFsLXBy/b2ZpbGUtaWNvbi1i/bHVlLXVzZXItcHJv/ZmlsZS1pY29uLnBu/Zw'
                 }
                 className="card-img-top"
