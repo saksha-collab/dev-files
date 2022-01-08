@@ -8,16 +8,19 @@ import About from './components/About';
 import Searchbox from './components/Searchbox';
 import AddButton from './components/AddButton';
 import Team from './components/Team';
+import Displayuser from './components/Displayuser';
+import Usersate from './components/Usersate';
 
 function App() {
     return (
-        <>
+        <Usersate>
             <Router>
                 <div>
                     <Navbar />
                     <About />
                     <Searchbox />
                     <AddButton />
+                    <Displayuser />
                     <Team />
                     <Footer />
                     {/* A <Switch> looks through its children <Route>s and
@@ -27,7 +30,7 @@ function App() {
                     </Switch>
                 </div>
             </Router>
-        </>
+        </Usersate>
     );
 }
 
