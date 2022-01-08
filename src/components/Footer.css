@@ -1,0 +1,14 @@
+.footer{
+    background-color: rgb(61, 60, 60);
+    text-align: center;
+    height: 10vh;
+    color: white;
+}
+
+.foot1{
+      background-color: rgb(61, 60, 60);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+    color: white;
+}

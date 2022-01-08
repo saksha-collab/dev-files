@@ -1,34 +1,32 @@
-.team{
+.sec4{
     display: flex;
-  }
-  
-  .profile{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      background-color: white;
-      margin: auto 25px;
-      height: 70vh;
-      width: 30vw;
-      border-radius: 15px;
-      transition: all 0.2s ease-out;
-      box-shadow: 4px 5px 20px gray;
-  }
-  
-  .profile:hover{
-      transform: scale(1.2);
-      box-shadow: 7px 5px 20px gray;
-      background-color: #c4d0df;
-  }
-  
-  .profile h1{
-      font-family: 'Expletus Sans', cursive;
-      color: #083668;
-      font-size: 150%;
-  }
-  
-  .profile p{
-      font-family: 'Nova Round', cursive;
-  }
-  
+    margin: 22vh auto;
+    width: 90vw;
+    background-color: #EBF0F6;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px grey;
+}
+
+.leftsec4{
+    display: flex;
+    width: 50vw;
+}
+
+.sec4head{
+    font-family: 'Expletus Sans', cursive;
+    font-size: 40px;
+    color: #003768;
+    margin-bottom: 15px;
+}
+
+.rightsec4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+}
+
+.rightsec4 p{
+    font-family: 'Baloo Tamma 2', cursive;
+}
