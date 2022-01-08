@@ -34,6 +34,8 @@ db.connect({
         [
             body('githubid', 'Github id cant be empty').isLength({ min: 1 }),
             body('codeforcesid', 'Codeforces id cant be empty').isLength({ min: 1 }),
+            body('codechefid','Codechef id cant be empty').isLength({min:1}),
+            body('Linkedin','Linkedin cant be empty').isLength({min:1}),
         ],
         async (req, res) => {
             try {

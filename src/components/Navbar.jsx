@@ -6,7 +6,7 @@ function Header() {
     return (
         <div className="header">
             <div className="Navbar">
-                <h2></h2>DEV_FILES
+                <h2>DEV_FILES</h2>
                 <ul>
                     <a href="">
                         <li>Home</li>

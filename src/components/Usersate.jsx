@@ -19,7 +19,9 @@ function Usersate(props) {
     const Adduser = async (element) => {
         const githubid = element.githubid;
         const codeforcesid = element.codeforcesid;
-        const response = await fetch(`${host}/adduser`, {
+        let codechefid = element.codechefid;
+        let Linkedin = element.Linkedin;
+        const response = await fetch(`${host}/adddata`, {
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
             mode: 'cors', // no-cors, *cors, same-origin
             cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -28,7 +30,7 @@ function Usersate(props) {
                 'Content-Type': 'application/json',
                 // 'Content-Type': 'application/x-www-form-urlencoded',
             },
-            body: JSON.stringify({ githubid, codeforcesid }),
+            body: JSON.stringify({ githubid, codeforcesid, codechefid, Linkedin }),
         });
         const json = await response.json();
         console.log(json);

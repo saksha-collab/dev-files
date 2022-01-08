@@ -1,0 +1,25 @@
+.dock{
+    border: 2px solid black;
+    background-color: rgb(201, 199, 199);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fillup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .fillup input{
+    padding: 5px;
+    margin: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 30vw;
+    border-radius: 15px;
+  }
