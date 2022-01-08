@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import './App.css';
@@ -10,7 +10,7 @@ import AddButton from './components/AddButton';
 import Team from './components/Team';
 import Displayuser from './components/Displayuser';
 import Usersate from './components/Usersate';
-import AddCred from './AddCred';
+import AddCred from './components/AddCred';
 
 function App() {
     return (
@@ -26,9 +26,10 @@ function App() {
                     <Footer />
                     {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-                    <Switch>
+                    <Routes>
                         <Route path="/"></Route>
-                    </Switch>
+                        <Route exact path="/submitDetails" element={<AddCred />}></Route>
+                    </Routes>
                 </div>
             </Router>
         </Usersate>

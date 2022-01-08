@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './Navbar.css';
 
@@ -19,6 +20,7 @@ function Header() {
                     </a>
                 </ul>
             </div>
+            <Link to="/submitDetails">SubmitDetails</Link>
         </div>
     );
 }
