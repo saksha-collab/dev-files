@@ -1,0 +1,23 @@
+.cont1{
+    display: flex;
+    background-color: orange;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cont1 button{
+    height: 10vh;
+    width: 40vw;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+  }
+  
+  .cont1 button:hover{
+    height: 12vh;
+    width: 43vw;
+    font-size: 18px;
+    cursor: pointer;
+  }

@@ -1,0 +1,21 @@
+.About{
+    height: 60vh;
+    width: 95vw;
+    background-color: yellow;
+    display: flex;
+    padding: 20px;
+  }
+  .firsthalf{
+    width: 50%;
+    /* background-color: black; */
+  }
+  .secondhalf{
+    width: 50%;
+    text-align: center;
+      font-family: 'Ubuntu', sans-serif;
+      padding-right: 50px;
+  }
+  .firsthalf img{
+      width: 40vw;
+      height: 40vh;
+  }
