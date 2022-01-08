@@ -48,6 +48,10 @@ function Usersate(props) {
         console.log('deleted ' + id);
         Getuser();
     };
-    return <Usercontext.Provider value={{ User, Adduser, Deluser, Getuser }}>{props.children}</Usercontext.Provider>;
+    return (
+        <Usercontext.Provider value={{ User, Adduser, Deluser, Getuser, setUser }}>
+            {props.children}
+        </Usercontext.Provider>
+    );
 }
 export default Usersate;

@@ -5,7 +5,6 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import './App.css';
 import About from './components/About';
-import Searchbox from './components/Searchbox';
 import AddButton from './components/AddButton';
 import Team from './components/Team';
 import Displayuser from './components/Displayuser';
@@ -18,7 +17,7 @@ function App() {
                 <div>
                     <Navbar />
                     <About />
-                    <Searchbox />
+                    {/* <Searchbox /> */}
                     <AddButton />
                     <Displayuser />
                     <Team />
