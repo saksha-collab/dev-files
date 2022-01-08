@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import img1 from '../image/img1.jpg';
 
 function About() {
     return (
@@ -15,7 +16,7 @@ function About() {
                     </p>
                 </div>
                 <div className="firsthalf">
-                    {/* <img src="https://replit.com/@2K20CO393-Saksh/proj#img1.jpg" alt=""> */}
+                    <img src={img1} />
                 </div>
             </div>
         </div>
