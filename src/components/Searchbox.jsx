@@ -2,8 +2,8 @@ import React from 'react';
 import './Searchbox.css';
 function Searchbox() {
     return (
-        <div>
-            <div className="container">
+        <div className="box">
+            <div className="cot">
                 <form action="" className="form">
                     <input type="text" placeholder="Enter Developer's username" />
                     <button className="button">Search</button>

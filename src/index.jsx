@@ -8,28 +8,29 @@ import About from './components/About';
 import Searchbox from './components/Searchbox';
 import AddButton from './components/AddButton';
 import Team from './components/Team';
+import Displayuser from './components/Displayuser';
+import Usersate from './components/Usersate';
 
 function App() {
     return (
-        <>
+        <Usersate>
             <Router>
                 <div>
                     <Navbar />
                     <About />
                     <Searchbox />
-                    <p>hello</p>
                     <AddButton />
+                    <Displayuser />
                     <Team />
+                    <Footer />
                     {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
                     <Switch>
-                        <Route path="/">
-                            <Footer />
-                        </Route>
+                        <Route path="/"></Route>
                     </Switch>
                 </div>
             </Router>
-        </>
+        </Usersate>
     );
 }
 
