@@ -29,14 +29,13 @@ db.connect({
     app.use('/api', api);
     app.use(express.json());
     app.use(express.static(path.join(__dirname, 'build')));
-    // app.get('*', function (req, res) {
-    //     res.sendFile(path.join(__dirname, 'build', 'index.html'));
-    // });
     app.post(
         '/adddata',
         [
             body('githubid', 'Github id cant be empty').isLength({ min: 1 }),
             body('codeforcesid', 'Codeforces id cant be empty').isLength({ min: 1 }),
+            body('codechefid','Codechef id cant be empty').isLength({min:1}),
+            body('Linkedin','Linkedin cant be empty').isLength({min:1}),
         ],
         async (req, res) => {
             try {
