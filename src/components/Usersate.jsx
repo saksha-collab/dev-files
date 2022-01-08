@@ -1,20 +1,19 @@
 import React from 'react';
-import { useContext } from 'react';
 import { useState } from 'react';
 import Usercontext from './Usercontext';
-function Usersate() {
+function Usersate(props) {
     const host = 'http://localhost:4000';
     const [User, setUser] = useState([]);
     const Getuser = async () => {
         const response = await fetch(`/fetchdata`, {
             method: 'GET',
-            cache: 'no-cache', 
+            cache: 'no-cache',
             headers: {
                 'Content-Type': 'application/json',
             },
         });
         const json = await response.json();
-        setUser(json)
+        setUser(json);
         console.log(json);
     };
     const Adduser = async (element) => {
@@ -45,13 +44,10 @@ function Usersate() {
                 'Content-Type': 'application/json',
             },
         });
+        console.log(response);
         console.log('deleted ' + id);
         Getuser();
     };
-    return (
-        <Usercontext.Provider value={{ User, Adduser, Deluser, Getuser }}>
-          {props.children}
-        </Usercontext.Provider>
-      );
+    return <Usercontext.Provider value={{ User, Adduser, Deluser, Getuser }}>{props.children}</Usercontext.Provider>;
 }
 export default Usersate;

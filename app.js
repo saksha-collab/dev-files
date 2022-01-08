@@ -53,7 +53,8 @@ db.connect({
                 console.log(githubdata);
                 console.log(cfdata.result[0]);
                 let data=await user.find({githubid:req.body.githubid});
-                if(data)
+                let x=data.length;
+                if(data.length!=0)
                 {
                     return res.status(401).send("User already exist");
                 }

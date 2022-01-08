@@ -5,7 +5,10 @@ import { useEffect } from 'react';
 import Usercontext from './Usercontext';
 import Useritem from './Useritem';
 function Displayuser() {
-    const { User, Getuser } = useContext(Usercontext);
+    const context = useContext(Usercontext);
+    console.log(context);
+    const User = context.User;
+    const Getuser = context.Getuser;
     useEffect(() => {
         Getuser();
     }, []);
