@@ -17,15 +17,13 @@ function App() {
                     <Navbar />
                     <About />
                     <Searchbox />
-                    <p>hello</p>
                     <AddButton />
                     <Team />
+                    <Footer />
                     {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
                     <Switch>
-                        <Route path="/">
-                            <Footer />
-                        </Route>
+                        <Route path="/"></Route>
                     </Switch>
                 </div>
             </Router>

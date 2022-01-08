@@ -1,33 +1,46 @@
+.box{
+  display: flex;
+  margin: 5vh auto;
+  width: 90vw;
+  background-color: #EBF0F6;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px grey;
+  align-items: center;
+  justify-content: center;
+}
+
 .container{
-    display: flex;
-    background-color: red;
-    height: 25vh;
-    padding: 5px;
-    align-items: center;
-    justify-content: center;
-  }
-  .form input{
-    height: 10vh;
-    width: 50vw;
-    border: none;
-    border-radius: 10px;
-      transition: all 0.3s ease-out;
-  }
-  .button{
-    height: 10vh;
-    width: 15vw;
-    border: none;
-    border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  background-color: #EBF0F6;
+  height: 10vh;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.form input{
+  height: 5vh;
+  width: 50vw;
+  border: none;
+  border-radius: 10px;
     transition: all 0.3s ease-out;
-  }
-  
-  .form input:hover{
-    height: 12vh;
-    border-radius: 15px;
-    width: 52vw;
-  }
-  
-  .button:hover{
-    border-radius: 20px;
-    cursor: pointer;
-  }
+}
+.button{
+  margin-left: 15px;
+  height: 5vh;
+  width: 15vw;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+  background-color: rgb(201, 200, 200);
+}
+
+.form input:hover{
+  border-radius: 15px;
+}
+
+.button:hover{
+  background-color: rgb(226, 223, 223);
+  border-radius: 20px;
+  cursor: pointer;
+}

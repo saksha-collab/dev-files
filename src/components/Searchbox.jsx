@@ -2,7 +2,7 @@ import React from 'react';
 import './Searchbox.css';
 function Searchbox() {
     return (
-        <div>
+        <div className="box">
             <div className="container">
                 <form action="" className="form">
                     <input type="text" placeholder="Enter Developer's username" />
