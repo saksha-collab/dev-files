@@ -11,12 +11,6 @@ function Header() {
                     <a href="">
                         <li>Home</li>
                     </a>
-                    <a href="">
-                        <li>About</li>
-                    </a>
-                    <a href="">
-                        <li>Contact US</li>
-                    </a>
                 </ul>
             </div>
         </div>

@@ -34,8 +34,8 @@ db.connect({
         [
             body('githubid', 'Github id cant be empty').isLength({ min: 1 }),
             body('codeforcesid', 'Codeforces id cant be empty').isLength({ min: 1 }),
-            body('codechefid','Codechef id cant be empty').isLength({min:1}),
-            body('Linkedin','Linkedin cant be empty').isLength({min:1}),
+            body('codechefid', 'Codechef id cant be empty').isLength({ min: 1 }),
+            body('Linkedin', 'Linkedin cant be empty').isLength({ min: 1 }),
         ],
         async (req, res) => {
             try {
@@ -51,11 +51,10 @@ db.connect({
                 cfdata = await cfdata.json();
                 console.log(githubdata);
                 console.log(cfdata.result[0]);
-                let data=await user.find({githubid:req.body.githubid});
-                let x=data.length;
-                if(data.length!=0)
-                {
-                    return res.status(401).send("User already exist");
+                let data = await user.find({ githubid: req.body.githubid });
+                let x = data.length;
+                if (data.length != 0) {
+                    return res.status(401).send('User already exist');
                 }
                 let newuser = await user.create({
                     githubid: githubdata.login,
