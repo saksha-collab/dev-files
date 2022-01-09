@@ -18,12 +18,10 @@ function App() {
                 <div>
                     <Navbar />
                     <About />
-                    {/* <Searchbox /> */}
                     <AddButton />
                     <Displayuser />
                     <Team />
                     <Footer />
-                    <AddCred />
                     {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
                     <Routes>
