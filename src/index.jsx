@@ -19,15 +19,13 @@ function App() {
                     <Navbar />
                     <About />
                     <AddButton />
-                    <Displayuser />
-                    <Team />
-                    <Footer />
-                    {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
                     <Routes>
                         <Route exact path="/"></Route>
                         <Route exact path="/submitDetails" element={<AddCred />}></Route>
                     </Routes>
+                    <Displayuser />
+                    <Team />
+                    <Footer />
                 </div>
             </Router>
         </Usersate>
