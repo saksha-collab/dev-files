@@ -9,14 +9,12 @@ function Team() {
                 <img src={img2} />
             </div>
             <div className="rightsec4">
-                <h1 className="heading sec4head">All About Us</h1>
+                <h1 className="heading sec4head">About DEV_FILES</h1>
                 <p>
-                    We are the tech based startup in the online real estate space. We aim to ease and innovative the
-                    whole concept of booking and renting a house in the real estate sector. With the help of modern
-                    advancements we focus on making the whole process of renting and finding a suitable house very
-                    convenient and easy within the tips of your finger. Led by passionate problem solvers and our
-                    dedicated development team, we are poised to become the brand that you will seek whenever you
-                    thought for booking a rental house.
+                    DEV_FILES is a react based platform where any developer can save their credentials of github,
+                    codeforces, codechef, linked-in. A profile will then appear on the app with data fetched from the
+                    given accounts. We also have included search functionality so that if you are unable to find someone
+                    so you can type his username there and the developer will appear there.
                 </p>
             </div>
         </section>
